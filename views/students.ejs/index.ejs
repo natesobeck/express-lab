@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Student List</h1>
+  <ul>
+    <li>
+      <% students.forEach(student => { %>
+        <%= students.name %>
+        <%= students.isNice ? 'They are a nice person.' : 'They aren\'t a nice person.' %>
+      <% }) %>
+    </li>
+  </ul>
+</body>
+</html>
