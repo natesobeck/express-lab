@@ -1,6 +1,7 @@
 // import modules
 
 import express from 'express'
+import { students } from './data/student-data.js'
 
 // create Express app
 
@@ -25,3 +26,5 @@ app.get('/', function(req, res) {
 app.listen(3000, function() {
   console.log('Listening on port 3000')
 })
+
+console.log(students)
