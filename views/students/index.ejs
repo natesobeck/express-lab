@@ -8,12 +8,12 @@
 <body>
   <h1>Student List</h1>
   <ul>
-    <li>
-      <% students.forEach(student => { %>
-        <%= students.name %>
-        <%= students.isNice ? 'They are a nice person.' : 'They aren\'t a nice person.' %>
-      <% }) %>
-    </li>
+    <% students.forEach(student => { %>
+      <li>
+        <%= student.name %> --- 
+        <%= student.isNice ? 'They are a nice person.' : 'They are not a nice person.' %>
+      </li>
+    <% }) %>
   </ul>
 </body>
 </html>
